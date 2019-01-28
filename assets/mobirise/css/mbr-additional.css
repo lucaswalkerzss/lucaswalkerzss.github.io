@@ -1773,16 +1773,12 @@ body {
 .cid-rguwWF8B8O .dropdown-item:hover {
   color: #c1c1c1 !important;
 }
-.cid-rguyXSOYlQ {
-  background: #ffffff;
+.cid-rguzrVHtoG {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ffffff;
 }
-.cid-rguyXSOYlQ .video-block {
-  margin: auto;
-}
-@media (max-width: 768px) {
-  .cid-rguyXSOYlQ .video-block {
-    width: 100% !important;
-  }
+.cid-rguzrVHtoG .mbr-text,
+.cid-rguzrVHtoG blockquote {
+  color: #767676;
 }

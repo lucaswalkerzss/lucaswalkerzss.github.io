@@ -31,7 +31,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.9.1",
     "siteFonts": [],
-    "uniqCompNum": 4,
+    "uniqCompNum": 5,
     "versionPublish": "4.9.1"
   },
   "pages": {
@@ -463,34 +463,21 @@
         },
         {
           "_styles": {
-            "background": "@bgColor",
-            "& when (@fullWidth = false)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@gradientBg)": {
-              "background": "linear-gradient(45deg, @bgColor, @color2)"
-            },
-            ".video-block": {
-              "margin": "auto",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".video-block": {
-                "width": "100% !important"
-              }
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
             }
           },
-          "_name": "video1",
-          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"<div> &#9;   <embed style=?loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "rguyXSOYlQ",
+          "_name": "content2",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><b>&lt;div&gt;\n</b></blockquote><blockquote><b>&nbsp; &nbsp; &lt;embed style=\"width: 540px; height: 405px;\" pluginspage=\"https://xat.com/update_flash.php\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"sameDomain\" align=\"middle\" flashvars=\"id=220140914\" name=\"chat\" quality=\"high\" src=\"https://www.xatech.com/web_gear/chat/chat.swf\" wmode=\"transparent\" /&gt;&lt;br /&gt;&lt;span style=\"font-size: smaller;\"&gt;&lt;a href=\"https://xat.com/web_gear/?cb\" target=\"_BLANK\"&gt;Get your own Chat Box!&lt;/a&gt; &lt;a href=\"https://xat.com/web_gear/chat/go_large.php?id=220140914\" target=\"_BLANK\"&gt;Go Large!&lt;/a&gt;&lt;/span&gt;&lt;br /&gt;\n</b></blockquote><blockquote><b>&lt;/div&gt;\n</b></blockquote><blockquote><b>&lt;div&gt;\n</b></blockquote><blockquote><b>&nbsp; &lt;br /&gt;\n</b></blockquote><blockquote><p><b>&lt;/div&gt;</b></p><p><b><br></b></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rguzrVHtoG",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "video1-3"
+          "_anchor": "content2-4"
         }
       ]
     }
